@@ -7,10 +7,18 @@
     "Marc Harter <wavded@gmail.com>"
   ],
   "license": "MIT",
-  "main": "./index.js",
+  "main": "./index.mjs",
   "repository": {
     "type": "git",
     "url": "git@github.com:visionmedia/connect-redis.git"
+  },
+  "exports": {
+    ".": {
+        "import": "./index.mjs"
+    }
+  },
+  "engines": {
+    "node": ">=14.0.0"
   },
   "devDependencies": {
     "blue-tape": "^1.0.0",
@@ -23,9 +31,6 @@
     "redis-mock": "^0.56.3",
     "redis-v3": "npm:redis@3",
     "redis-v4": "npm:redis@4"
-  },
-  "engines": {
-    "node": ">=12"
   },
   "bugs": {
     "url": "https://github.com/visionmedia/connect-redis/issues"
