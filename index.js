@@ -1,1 +1,4 @@
-module.exports = require("./lib/connect-redis")
+import connectRedis  from './lib/connect-redis';
+
+export default connectRedis;
+
